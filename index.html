@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Blene | Home</title>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<link rel="stylesheet" href="css/index.css">
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  <title>Blene</title>
+  <style>
+    /*for article scroll*/
+html{
+  scroll-behavior: smooth;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    
+}
+/*read more read less button*/
+.addReadMore.showlesscontent .SecSec,
+.addReadMore.showlesscontent .readLess {
+    display: none;
+}
+
+.addReadMore.showmorecontent .readMore {
+    display: none;
+}
+
+.addReadMore .readMore,
+.addReadMore .readLess {
+  padding-top: 15px;
+  display: block;
+  background: #e41d3f;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 8px 20px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 20px;
+
+}
+
+.addReadMoreWrapTxt.showmorecontent .SecSec,
+.addReadMoreWrapTxt.showmorecontent .readLess {
+    display: block;
+}
+/* span in the sidnav below a tags*/
+.span {
+  background:black; 
+font-size:25px;
+color: white;
+padding: 6px;
+}
+/* sidenav*/
+.sidenav {
+    height: 40%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px){
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/*image on the top Ask blene*/
+#logo img {
+  width: 100%;
+  height: 90px;
+  padding-top: 20px;
+  margin: 0;
+  position: fixed;
+  background: white;
+}
+/*stay motivated */
+h4{
+  background: #2b64de;
+  margin: 0;
+  padding: 10px 0 2px;
+  text-align: center;
+  color: white;
+}
+/*position of h1 & id logo && h4*/
+.fixed{
+  position: fixed;
+  width: 100%;
+}
+/*all images*/
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/*all boxes*/
+#boxes .box{
+    float: left;
+    width: 32%;
+    padding: 5px;
+    text-align: justify;
+    
+}
+
+/*all headers (h2)*/
+h2{
+  color: green;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 50px;
+  
+}
+/*positivism*/
+#boxes10{
+  margin-top: -10px;
+  background: rgb(160,220,174);
+
+}
+
+.container10{
+    width: 80%; 
+    margin: auto;
+}
+
+.box10{
+  color: black;
+   border: 0 solid ;
+  background: rgb(230,253,228);
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  text-align: left;
+  font-family:Times New Roman;
+}
+/*silence*/
+.container9{
+    width: 80%; 
+    margin: auto;
+}
+#boxes9{
+  margin-top: -10px;
+  background: rgb(160,220,174);
+}
+.box9{
+  color: black;
+ border: 0 solid ;
+  background: rgb(230,253,228);
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  text-align: left;
+  font-family:Times New Roman;
+}
+/*ask around*/
+.container8{
+    width: 80%; 
+    margin: auto;
+}
+#boxes8{
+  background: hsl(139.6,46.5%,63.4%);
+  margin-top: -10px;
+}
+.box8{
+  color: black;
+ border: 0 solid ;
+  background: rgb(230,253,228);
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  text-align: left;
+  font-family:Times New Roman;
+}
+
+/*broken window*/
+#boxes7{
+  margin-top: -10px;
+  background-color: white;
+
+}
+.container7{
+    width: 80%; 
+    margin: auto;
+}
+
+.box7{
+  color: black;
+   border: 0 solid ;
+    background: hsla(118.8,75.1%,82.6%,0.544);
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  text-align: left;
+  font-family:Times New Roman;
+}
+
+
+/*millionaires*/
+#boxes6{
+  background: white;
+  margin-top: -10px;
+}
+
+.container6{
+    width: 80%; 
+    margin: auto;
+}
+
+.box6{
+  color: black;
+   border: 0 solid ;
+
+  background: hsla(118.8,75.1%,82.6%,0.544);
+  width: 100%;
+  
+  height: 80%;
+  padding: 10px;
+  text-align: left;
+  font-family:Times New Roman;
+}
+
+/*life goal*/
+.container2{
+    width: 80%; 
+    margin: auto;
+}
+#boxes2{
+  background: hsla(118.8,75.1%,82.6%,0.544);
+  
+  margin-top: -10px;
+}
+.box5{
+  color: black;
+ border: 0 solid ;
+  background: hsla(118.8,75.1%,82.6%,0.544);
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  text-align: left;
+  font-family:Times New Roman;
+}
+#box4{
+ border: 0 solid ;
+  background: #c6d2ec;
+border-left-color: ;
+  border-left-width: 5px;
+  width: 100%;
+  height: 200%;
+  padding: 10px;
+  text-align: left;
+}
+#box3{
+ border: 0 solid ;
+  background: #c6d2ec;
+border-left-color:;
+  border-left-width: 5px;
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  text-align: left;
+}
+#box2{
+ border: 0 solid ;
+  background: #c6d2ec;
+  border-left-width: 5px;
+border-left-color: ;
+  width: 100%;
+  height: 140px;
+  padding: 10px;
+  text-align: left;
+  font-family: Sans-Serif;
+}
+
+#box1{
+  border: 0 solid ;
+  background: #c6d2ec;
+  border-left-width: 5px;
+border-left-color: ;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  font-family:Times New Roman;
+}
+.box0{
+  border: 0 solid ;
+  background: #c6d2ec;
+  border-left-width: 5px;
+  border-left-color: ;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  font-family:Times New Roman;
+}
+.container{
+    width: 80%; 
+    margin: auto;
+}
+  #boxes .box{
+        float: none;
+        width: 100%;
+    }
+/*social media icons*/
+
+/*cols*/
+
+
+/*cols*/
+
+.social-icons{
+    text-align: center;
+    background: black;
+}
+
+
+/*
+.social-icons .style-1:not(:last-child){
+    margin-right:0.6rem;
+    
+}
+
+*/
+
+.style {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    background-color: white;
+    padding: 5px 5px;
+    margin: 15px;
+    box-shadow: 2px 1px 3px 2px #383838;
+    position: relative;
+
+}
+
+.style .fab {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.style:hover {
+    color: white;
+}
+
+/*For the circle buttom*/
+.amz-btn-circle {
+    border-radius: 50%;
+}
+
+/*For the rounded corner buttom */
+.amz-btn-round {
+    border-radius: 20%;
+}
+
+
+
+
+/*social media cols color define*/
+
+.col-rev-telegram:hover {
+    background-color: #0088CC   ;
+       transform:translate(0, -10px);
+}
+.col-rev-telegram a{
+ color:  #0088CC;
+ text-decoration: none;
+}
+.col-rev-telegram a:hover{
+  color: #fff;
+}
+
+
+.col-rev-linkedin:hover {
+    background-color: #007bb6;
+       transform:translate(0, -10px);
+}
+.col-rev-linkedin a{
+  text-decoration: none;
+   color: #007bb6;
+}
+.col-rev-linkedin a:hover{
+  color:#fff;
+}
+
+.col-rev-github:hover {
+    background-color: #333 ;
+       transform:translate(0, -10px);
+}
+
+.col-rev-github a{
+  text-decoration: none;
+  color: #333;
+}
+.col-rev-github a:hover{
+  color: #fff;
+     transform:translate(0, -10px);
+}
+/*footer*/
+.main-footer{
+    padding-top: 20px;
+    background-color: #000;
+    padding-bottom:5px;
+    border-top: 1px solid grey;
+    color: white;
+    text-align: center;
+}
+.main-footer p{
+  text-align: left;
+  font-size: 12px;
+  
+  text-align: center;
+  
+}
+.main-footer img{
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  color: white;
+}
+.main-footer ul{
+  list-style-type: none;
+}
+.main-footer ul li a{
+  color: white;
+  text-decoration: none;
+  margin: 40px;
+  padding-right: 40px;
+  
+}
+
+
+.main-footer h2{
+  padding: 0 ;
+  margin: 5px;
+}
+
+.about{
+  height:100%
+  width: auto;
+border: 0 solid ;
+  background: #c6d2ec;
+  border-left-width: 5px;
+  border-left-color: e;
+  padding: 10px;
+  font-family:Times New Roman;
+}
+.contact{
+    height:100%
+  width: auto;
+  background: #ebecec;
+  padding-bottom: 10px;
+
+}
+.address-holder{
+  text-align: center;
+}
+  </style>
+</head>
+   <body>
+     
+  <div class="fixed">
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)"
+  class="closebtn"
+  onclick="closeNav()">☰ </a>
+
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+  <a href="#sec1">Articles</a>
+
+</div>
+  <div class="span">  <span onclick="openNav()">☰ Home 
+      </span>
+        </div>
+         <div id="logo">
+           <img src="logo9.jpg"> 
+            </div>
+              </div>
+              <!--br removed caused the image half will be hidden -->
+                <br>
+                  <br>
+                    <br>
+                      <br>
+                       <br>
+                    <br>
+               <h4> STAY MOTIVATE</h4>
+           <img src="success.jpg">
+         <section id="boxes">
+       <div class="container">
+     <div class="box0">
+  <q>
+    Win in Silence, let them think you're  losing.
+         </q> 
+            </div>
+               <br>
+                  <div id="box1">
+     <q>You don't have to Be Great to Start,But you have to Start to be Great.</q>
+        </div>
+           <br>
+             <div id="box2">
+Your choice of friends tells a lot about what kind of person you are or are likely to become. Your close friends are bound to have a<q>molding</q> effect on you.
+          </div>
+            <br>
+              <div id="box3">
+    Don’t wait until everything is just right. It will never be perfect. There will always be challenges, obstacles and less than perfect conditions. So what? Get started now. With each step you take, you will grow stronger, more and more skilled, more and more self- confident and more successful.
+          </div>
+            <br>
+              <div id="box4">
+          
+What is your dream? What is your ultimate desire for your life? What do you really want to do with your life? Any ideas? 
+If you ask people what they really want to do with their lives, most people
+
+     <div id="sec1"></div>
+have no idea. So how about you? What do you desire? What would you most
+want to do with your life? 
+???????
+          </div>
+          <br
+      <>  <div></div>
+    </section>
+    
+    <div id="img">
+    <img src="amazing-facts.jpg">
+       </div>
+          <section id="boxes9">
+        <div class="container9">
+     <div class="box9">
+<p class="addReadMore showlesscontent"> <h2>  Awesome facts😮😮😮</h2>
+<h5>BetyydrS | oct 27,2020</h5>
+
+👉Fear can feel good—if we're not really in danger. 
+
+<hr>
+👉If we have a plan B, our plan A is less likely to work. 
+<hr>
+
+👉We care more about a single person than about massive tragedies. 
+<hr>
+
+👉Beginnings and ends are easier to remember than middles. 
+<hr>
+👉It takes five positive things to outweigh a single negative thing.
+
+BetyydrS
+
+         </p>
+        </div>
+      </div>
+    </section>   
+    
+  <div id="img">
+    <img src="over.jpg">
+       </div>
+          <section id="boxes9">
+        <div class="container9">
+
+     <div class="box9">
+<h2> How do we stop over thinking?</h2>
+<h5>BetyydrS | oct 26,2020</h5>
+
+<p class="addReadMore showlesscontent"> 
+You only over think because you try to get a solution to the problem that you like more.
+<br>
+Unaccepting of what is the most direct, and often most beneficial, way to solve your problem you think and think and think in the hopes of getting an easier, more comfortable and less confrontational solution.
+<br>
+That is when over thinking comes into play.
+
+Take a deep Breath. Relax. And then boil the problem down to its simplest form.
+
+Try to find a way to get to action in as few steps as possible.
+
+I. E. You are low on money. Find a second job.<br>
+
+Not necessarily the easiest solution, nor the most comfortable one, but a solution nonetheless, and most often the most effective one.
+
+The point is to get yourself to do something and to follow a path.
+
+While that second job may not be the ideal solution it at least is a starting point!<br>
+
+It’s something you can look for while you come up with something maybe better.
+
+You can always switch your objective, but if you do not do anything at all nothing will change!
+
+In this sense, the only way to overcome overthinking is by converting it into action.
+<br>
+Do something, anything. It will get you much further than thinking about it nonstop.
+
+             </p>
+           </div>
+        </div>
+      </section> 
+    
+    <div class="post">
+       <div id="img">
+          <img src="positive.jpg">
+            </div>
+            
+            
+            
+              <section id="boxes10">
+            <div class="container10">
+   <div class="box10">
+     <h2>positivism </h2>
+    <h5>BetyydrS | oct 21,2020</h5>
+ <p class="addReadMore showlesscontent">
+    To be clearly perceived as a positive, rather than a negative, individual you need to make at least three times as many upbeat remarks as negative comments. 
+<br>
+<i><b>What’s your ratio?</i></b> If more than one-quarter of your comments are critical, complaining,
+ or corrective—no matter how well intended or needed your responses are—you’re going to be perceived negatively rather than positively. 
+<br>
+If you want your family, coworkers, or friends to value you for your positive contributions, they need to see your positive side in action far more often than the critical side.
+
+Seek Consistency <br>
+
+Whenever a gap opens up between where you’re going and where you want to be going, the sooner you spot the deviation, the  quicker you can correct your course—and the less radical your adjustments will need to be. <br>
+
+Use your observations and the feedback you’re receiving from trustworthy sources to locate gaps and progress points. Then work systematically to close the gaps. 
+<br>
+The more consistent you are at staying on course, the more quickly you’ll get where you want to go. 
+
+Respect the confidences of those who have entrusted you with them. If people experience adverse consequences when they take you into their
+confidence, it might result in others thinking you will react more as a
+judge, a critic, or a gossip than as a constructive coach or a guide.
+             </p>
+ 
+        </div>
+      <div>
+   </section>  
+</div>
+    
+    
+ <div id="img">
+    <img src="sil.jpg">
+       </div>
+          <section id="boxes9">
+        <div class="container9">
+     <div class="box9">
+   <h2> Why is silence very important in life?</h2>
+<h5>BetyydrS | oct 21,2020</h5>
+<p class="addReadMore showlesscontent">
+If I said to you <q>"you should make your well-being a priority"</q> you'd consider this an obvious statement.
+
+<i><b>But, what does it mean?
+
+If you set the alarm to get up and go for a run but you haven't been sleeping well, what is the right thing to do for your well being? Go back to sleep or get out of bed and go for a run?<br>
+
+If you are struggling with anxiety, do you work through your feelings or look for a distraction? What is best for your well being, time alone, or time with others?<br>
+
+If someone in your life holds a position of great importance but your relationship with them is toxic, do you cut them out of your life? What is best for your well being? Your history with them, or distance from them?
+Doing what's best for your well being is really difficult. Sometimes, it's
+<br>
+impossible to tell. This is why we need silence. To hear ourselves sort out what it is that would truly be best for us.   
+<b>Think about it☝️</b>
+            </p>
+        </div>
+      </div>
+    </section> 
+           
+            
+ <img src="couple.jpg">
+   <section id="boxes8">
+     <div class="container8">
+       <div class="box8">
+         <h2>  Ask Around  </h2>  
+            <h5>BetyydrS | oct 20,2020
+              </h5>
+<p class="addReadMore showlesscontent">
+<mark><b>If the relationship is important, </mark></b>then it’s worth managing consciously and deliberately. From your own day-to-day observations, you can begin to develop a sense of
+ 
+whether people are experiencing the brand you are seeking to create. But don’t settle for a single data source—and a subjective one at that. <br>
+
+The observations of people you know and trust (spouses,  
+friends, and others) can help you fill in the picture in more detail. Take full advantage of their perspectives on a regular basis. Ask them what they’re seeing, and combine their observations with your own to further guide your brand-building efforts. <br>
+
+<mark><b>If you continually check the status of your personal brand</mark></b> relationships (without making a pest of yourself, of course), you will discover how you’re doing at reaching your objectives. If you’re on target, you will begin to compile <q>"anecdotal evidence"</q> that (to use the earlier listening example) your children or colleagues are indeed using you as a sounding board—they are asking for, and acting on, your insights about what they do, where they go, the dreams they have, and the issues they face. <br>
+
+<i><b>On the other hand, if there’s a gap, where is it coming from?
+
+It could be you. Despite your brand promise to be available and listen, how often are you actually in a physical and mental state where you can give your full attention to someone else? Are you exhausted from other demands? Are you habitually behind the barrier of the computer (or the newspaper), or asleep in front of the television, or so involved in other activities that the important people in your life don’t think you have time for them? <br>
+
+It could also be them. Are they able to take advantage of the brand promise you’re prepared to make on their behalf? Are they even aware of it?
+</b></i><br>
+
+Maybe they’re not comfortable confiding in anyone at this point. Or maybe they just haven’t received any indication from you that listening is something you are prepared to do and are good at doing. People may be surprised to learn you aspire to be seen as a
+helpful, supportive listener—which is an
+example of why helping people
+connect the dots, so to speak, is such an important part of building productive brand expectations.
+       </p>
+     </div>
+   </div>
+</section>
+  
+<img src="broken.jpg">
+  <section id="boxes7">
+    <div class="container7">
+      <div class="box7">
+        <h2>Broken Window Syndrome</h2>
+          <h5>
+            BetyydrS | oct 19,2020
+              </h5>
+<p class="addReadMore showlesscontent">
+  <i>In recent years,</i> many cities have become conscious of something called the<q>"broken window syndrome".</q>Often, when a building is abandoned, the first thing that happens is somebody breaks the windows. Those broken windows become a clue, an indicator to others, 
+that the property has become vulnerable. 
+<br>
+  <i>Ifthe windows are not repaired promptly,</i> a predictable cycle of  
+decline follows—vagrants move in, fires are started, plumbing fixtures are stolen, and so on. <i><b>The cost of restoring the building to an acceptable quality level rises as its condition deteriorates</b></i>, making it  
+more likely that the slide into decline will spread to other properties nearby. 
+<br>
+  <i><b>Cities </b></i>that use broken windows as an indicator of more serious problems to come intervene more quickly and pro actively. 
+
+The broken windows standard helps them do what they need to do in a more systematic and productive—hence competent—way. 
+<br>
+   <i><b>What are the <q>"broken windows"</q> for your personal identity—the expected standards and style you’re no longer meeting?</b></i> They could be something as simple as phone calls not returned, birthdays not acknowledged, promises to attend a child’s game or school event that somehow slide by unnoticed. <br>
+
+<i>Taken individually</i>, none amounts to a major issue. But as individual instances solidify into habit patterns,<i><b> the behavior becomes easier to continue,
+harder to redirect.</b></i> And the people who are relating to your personal brand begin to modify their expectations of your standards.
+       </p>
+         </div>
+           </div>
+             </div>
+               </section>
+
+  
+ <img src="dream.jpg">
+ <img src="car.jpeg.jpg">
+    <section id="boxes6">
+      <div class="container6">
+        <div class="box6">
+          <h2>
+            Millionaires
+              </h2> 
+                <h5>     
+             Blene Mamo | Oct 05,2020
+          </h5>
+   <q>Dream big dreams; only big dreams have the power to move men’s souls.</q>
+          <pre>
+            <code>MARCUS AURELIUS</code>
+              </pre>
+ <p class="addReadMore showlesscontent">          
+THE FIRST SECRET of self-made millionaires is simple: Dream Big Dreams! Allow yourself to dream. Allow yourself to imagine and fantasize about the kind of life you would like to live. Think about the amount of<i> money </i>you would like to earn and have in your bank account.<br> All great men and women begin with a dream of something wonderful and different from what they have today. You know the song that says <q>"You have to have a dream if you want to make a dream come true."</q> It’s true for you and for everyone else, as well. Imagine that you have no limitations on what you can be, have, or do in life.<br>
+<mark>Just for the moment, 
+imagine</mark> that you have all the time, all the <u>money</u>, all the <u>education</u>, all the <u>experience</u>, all the <u>friends</u>, all the <u>contacts</u>, all the <u>resources</u>, and <u>everything else you need to achieve anything you want in life</u>. <br>If your potential were completely unlimited, what kind of a life would you want to create for yourself and your family? Practice <q>back from the future</q> thinking. This is a powerful technique practiced continually by high performing men and women. <br>This way of thinking has an amazing effect on your mind and on your behavior.<b><u> Here </u> </b>is how it works: Project yourself forward five years. Imagine that five years have passed and that your life is now perfect in every respect.<br><i><b> What does it look like? What are you doing? Where are you working? 
+
+How much money are you earning? How much do you have in the bank? What kind of a lifestyle do you have?</b></i><br>
+Create a vision for yourself for the long-term future. The more clear your vision of health, happiness, and prosperity, the faster you move toward it and the faster it moves toward you. When you create a clear mental picture of where you are going in life, you become more positive, more motivated, and more determined to make it a reality. You trigger your natural creativity and come up with idea after idea to help make your vision come true. You always tend to move in the direction of your dominant dreams, images, and visions. 
+<br>
+The very act of allowing yourself to <b><mark>dream big dreams </b></mark>actually raises your self-esteem and causes you to like and respect yourself more. It improves your self-concept and increases your level of self-confidence. It increases your personal level of self-respect and happiness. There is something about dreams and visions that is exciting and that stimulates you to do and be better than you ever have before. <u>Here </u>is a great question for you to ask and answer, over and over again: What one thing would I dare to dream if I knew <i><b>I could not fail? If you were absolutely guaranteed of success in any one goal in life, large or small, short-term or longterm, what would it be? What one great goal would you dare to dream if you knew you could not fail? </b></i>Whatever it is, write it down and begin imagining that you have achieved this one great goal already. Then, look back to where you are today.<br>
+<i><b>
+      What would you have done to get where you want to go? What steps would you have taken? 
+
+  What would you have changed in your life? What would you have started up or abandoned? Who would you be with? Who would you no longer be with? If your life were perfect in every respect, what would it look like?</b></i> Whatever it is that you would do differently, take the first step today. Dreaming big dreams is the starting point of achieving your goal of financial independence. The number one reason that people never succeed financially is because it never occurs to them that they can do it. 
+<br>
+As a result, they <mark>never try. They never get started.</mark> They continue to go around in financial circles, spending everything they earn and a little bit more besides. But when you begin to dream big dreams about financial success, you begin to change the way you see yourself and your life.<br> You begin to do different things, bit by bit, gradually, until the whole direction
+of your life changes for the better.
+<i>Dreaming big dreams is the starting point of financial success and of becoming a self-made millionaire</i>.
+     </p>
+        </div>
+           </div>
+             </section>
+  
+              <div id="img">
+          <img src="life goal.jpg">
+        </div>
+    <section id="boxes2">
+        <div class="container2">
+            <div class="box5">
+               <h2>LIFE GOAL</h2>
+        
+                   <h5>Blene Mamo | sep 24,2020</h5>
+  
+        <p>
+     The First Exercise To Be Done Before Launching One's Life Goals Is Goal-Setting.
+<i><b>Most people say they have goals.
+But do they really have set goals ?</b></i>
+Goals should be specific and written down and not something in thin air.
+Goals are what drive people towards success.
+You will find it much easier to stay motivated if you have goals to strive for.<br>
+If you wander aimlessly through life, you will naturally be unmotivated.
+Set specific, realistic and achievable goals.
+You will in that case find getting to
+the goal/ s an easy task.
+Life's Little Instructions for the day
+Wisdom is using the mistakes from your past to create a better future..<br>
+                  </p>
+              </div>
+            </div>
+         </section>
+     <footer class="main-footer">
+       <img src="logo99.jpg">
+         <ul>
+           <li><a href="index.html">Home</a></li>
+              <br>
+            <li><a href="about.html">About Us</a></li>
+                <br>
+                 <li><a href="contact.html">Contact</a></li>
+       </ul>
+    </footer>  
+ <div class="social-icons">
+    <!-- telegram-->
+      <span class="style  amz-btn-circle col-rev-telegram"><a href="https://telegram.me/askbelen"> 
+      <i class="fab fa-telegram-plane"> </i></a></span>
+          <!-- github-->
+   <span class="style  amz-btn-circle col-rev-github"><a href="https://github.com/tadiwos-stack"><i class="fab fa-github"> </i></a></span>
+           <!--linkedin-->
+  <span class="style  amz-btn-circle col-rev-linkedin"><a href="https://www.linkedin.com/in/tadiwos-stack"> <i class="fab fa-linkedin-in"> </i></a></span>
+ </div>
+  <footer class="main-footer">
+    <p> &copy;2020 Blene Mamo.All Rights Reserved.</p></footer>
+    <script>
+      /* Set the width of the side navigation to
+250px */ 
+
+function openNav() {
+ document.getElementById("mySidenav")
+ .style.width="250px";
+}
+
+function closeNav() {
+ document.getElementById("mySidenav")
+ .style.width = "0";
+}
+
+   function AddReadMore() {
+    //This limit you can set after how much characters you want to show Read More.
+    var carLmt = 280;
+    // Text to show when text is collapsed
+    var readMoreTxt = " ... Read More";
+    // Text to show when text is expanded
+    var readLessTxt = " Read Less";
+
+
+    //Traverse all selectors with this class and manupulate HTML part to show Read More
+    $(".addReadMore").each(function() {
+        if ($(this).find(".firstSec").length)
+            return;
+
+        var allstr = $(this).text();
+        if (allstr.length > carLmt) {
+            var firstSet = allstr.substring(0, carLmt);
+            var secdHalf = allstr.substring(carLmt, allstr.length);
+            var strtoadd = firstSet + "<span class='SecSec'>" + secdHalf + "</span><span class='readMore'  title='Click to Show More'>" + readMoreTxt + "</span><span class='readLess' title='Click to Show Less'>" + readLessTxt + "</span>";
+            $(this).html(strtoadd);
+        }
+
+    });
+    //Read More and Read Less Click Event binding
+    $(document).on("click", ".readMore,.readLess", function() {
+        $(this).closest(".addReadMore").toggleClass("showlesscontent showmorecontent");
+    });
+}
+$(function() {
+    //Calling function after Page Load
+    AddReadMore();
+});
+
+    
+    
+    
+    </script>
+</body>
+</html>
